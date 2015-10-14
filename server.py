@@ -1,4 +1,4 @@
-
+﻿
 # code reduced from https://wiki.python.org/moin/BaseHttpServer
 
 import time
@@ -18,6 +18,6 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     s.wfile.write("</body></html>")
 
 
-httpd = BaseHTTPServer.HTTPServer(("localhost", 8000), MyHandler)
+httpd = BaseHTTPServer.HTTPServer(("172.31.31.13", 8000), MyHandler)
 httpd.serve_forever()
 
